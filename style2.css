@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f5f3f5;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* ------------title----------------- */
+.title{
+    display: flex;
+    padding: 20px;
+}
+
+.title-text{
+    padding-left: 10px;
+    border-left: 3px solid #b5c2b7;
+    text-transform: uppercase;
+}
+.title-heading{
+    color: #2e282a;
+}
+
+.title-subheading{
+    padding: 5px;
+    text-transform: capitalize;
+    color: #2e282a;
+}
+/* ------------end of title----------------- */
+
+/* ================================== */
+/* register */
+/* ================================== */
+
+#register-center{
+    min-height: 80vh;
+    background: #8fcbfd;
+    display: flex;
+    justify-content: center;
+}
+
+form input{
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    font-size: 25px;
+    border-bottom:4px solid #f5f5f5;
+    background: transparent;
+}
+
+form input::placeholder{
+color: #f5f5f5;
+}
+
+#gender{
+    text-transform: capitalize;
+    font-size: 15px;
+    background: #b5c2b7;
+    color: #f5f3f5;
+    padding: 5px 20px;
+    border: 3px solid #f5f3f5;
+}
+
+.register-btn{
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #f5f3f5;
+    background: #b5c2b7;
+    border: 3px solid #f5f3f5;
+    padding: 5px 20px;
+    
+}
+
+.register-btn:hover {
+    cursor: pointer;
+    color: #b5c2b7;
+    background: #f5f5f5;
+
+}
+/* ================================== */
+/* end of register */
+/* ================================== */
+/* ================================== */
+/* home */
+/* ================================== */
+.home-page a {
+    color: #f5f3f5;
+    background: #0d1317;
+    border: 3px solid #ad343e;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 15px;
+    transition: color 2s ease, background 2s ease;
+}
+
+.home-page a:hover{
+    color: #0d1317;
+    background: #f5f3f5;
+}
+
+
+
+/* ================================== */
+/* end of home */
+/* ================================== */
