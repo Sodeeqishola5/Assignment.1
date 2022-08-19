@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f5f3f5;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* ================================== */
+/* header */
+/* ================================== */
+/* ---------------nav----------------- */
+
+#nav ul{
+    list-style-type: none;
+    display: none;
+}
+
+ #nav ul li:last-of-type{
+    display: flex;
+}  
+
+#nav ul li:last-of-type a {
+    flex: 1 0 auto;
+    text-align-last: center;
+}
+
+#nav ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #ffc914;
+    background: #2e282a;
+    font-size: 20px;
+    transition: color 2s ease-in-out,background 2s ease;
+}
+
+#nav ul li a:hover{
+    color: #2e282a;
+    background: #ffc914;
+}
+
+.nav-logo{
+    background: #ffc914;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#nav{
+    position: fixed;
+    width: 100%;
+    z-index: 10!important;
+}
+
+
+/* ----------nav responsive------------------ */
+
+@media screen and (min-width:480px){
+    #nav {
+    border-top: 5px solid #ffc914;
+    background: #2e282a;
+    display: flex;
+    }
+    
+    #nav ul{
+        display: flex!important;
+        flex: 1 0 auto;
+        justify-content: space-around;
+        padding: 0 10px;
+        align-self: center;
+        flex-wrap: wrap;
+    }
+
+    #nav ul li{
+        flex: 1 0 100px;
+    }
+
+    #nav ul li a{
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    #nav ul li:last-of-type,
+    #toggle-btn{
+        display: none;
+    }
+
+
+}
+
+
+/* --------------end of nav----------- */
+
+
+/* --------------banner-------------- */
+header{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#banner{
+    flex: 1 0 auto;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+    url(../images/sdq\ 1.jpg)
+    center/cover fixed no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-text h1{
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #ffc914;
+    font-style: italic;
+    text-decoration: underline;
+    
+    /* animation-name: slide;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s; */
+
+    animation: slide 3s infinite 1s;
+}
+
+/* -------------animation------------- */
+
+@keyframes slide{
+    0%{
+        opacity: 0;
+        transform: translatex(-100px)
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translatex(0px)
+    }
+}
+
+/* -------------end of animation------------- */
+
+.banner-text h3{
+    text-transform: capitalize;
+    font-size: 30px;
+    color: #d9e5d6;
+}
+
+.banner-text a{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #ffc914;
+    border: 3px solid #ffc914;
+    background: transparent;
+    transition: color 2s ease,background 2s ease;
+}
+
+.banner-text a:hover{
+    color: #2e282e;
+    background: #ffc914;
+}
+
+/* --------------end of banner------- */
+
+/* ================================== */
+/* end of header */
+/* ================================== */
+
+
+/* ------------title----------------- */
+.title{
+    display: flex;
+    padding: 20px;
+}
+
+.title-text{
+    padding-left: 10px;
+    border-left: 3px solid #b5c2b7;
+    text-transform: uppercase;
+}
+.title-heading{
+    color: #2e282a;
+}
+
+.title-subheading{
+    padding: 5px;
+    text-transform: capitalize;
+    color: #2e282a;
+}
+
+/* ------------end of title----------------- */
+
+/* ================================== */
+/* about me */
+/* ================================== */
+
+#about-me{
+    min-height: 90vh;
+    padding: 40px 0;
+    background: linear-gradient(rgba(255, 201, 20,0.3),rgba(255, 201, 20,0.3)),
+    url(../images/about\ photo.jpg)
+    center/cover fixed no-repeat;
+    clip-path: polygon(0 0,100% 5%,100% 100%,0 95%);
+}
+
+.about-center{
+    max-width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+
+.about-photo img{
+    width: 50%;
+    border-radius: 20px;
+    transition: transform 2s ease;
+}
+
+.about-photo img:hover{
+    transform: scale(0.8);
+}
+
+.about-text{
+    /* margin: 40px 0; */
+    flex: 0 0 50%;
+}
+
+/* ================================== */
+/* end of about me */
+/* ================================== */
+/*-------------------------*/
+/*about responsive*/
+/*-------------------------*/
+@media screen and (min-width:480px){
+    .about-center{
+        display: grid;
+        grid-template-columns: 1fr; 
+        }
+    
+    .about-photo{
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width:992px){
+    .about-center{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/*-------------------------*/
+/*end of about responsive*/
+/*-------------------------*/
+
+/*-------------------------*/
+/*footer*/
+/*-------------------------*/
+
+
+footer{
+    background: #0d1317;
+    padding: 30px 0;
+    text-align: center;
+
+}
+
+
+footer p{
+    color: #f5f3f5;
+    font-size: 20px;
+}
+
+
+/*-------------------------*/
+/*end of footer*/
+/*-------------------------*/
+
+
+
+
+
+

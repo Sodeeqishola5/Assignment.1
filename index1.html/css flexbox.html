@@ -6,11 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css flexbox</title>
     <!-- style.css -->
-    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="../style.css/flexbox.css">
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- nav -->
+    <nav id="nav">
+        <div class="nav-logo">
+            <img src="../images/sideeq.snip.jpg" alt="nav-logo" width="50">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">contact </a></li>
+            <li><a href="register.css">register </a></li>
+            <li><a href="calculator.html">calculator </a></li>
+            <li><a href="login.html">login </a></li>
+        </ul>
+    </nav>
+    <!-- end of nav -->
     <!-- title -->
         <div class="title">
             <div class="title-text">
@@ -20,7 +34,7 @@
     <!-- end of title -->
 
     <!-- css flexbox -->
-        <section id="flexbox">
+        <main class="container">
             <main class="flexbox-center">
                 <article class="flexbox-card">
                     <div class="text"><input  type="text" name="" id="" value="0"></div>
@@ -29,8 +43,8 @@
                 <article class="button-1">
                     <div class="operator">/</div>
                     <div class="operator">%</div>
-                    <div class="clear">C</div>
-                    <div class="cancel">x</div>
+                    <div class="clear">&larr;</div>
+                    <div class="cancel">&otimes;</div>
                 </article>
                 <article class="button-2">
                     <div class="number">7</div>
@@ -57,15 +71,15 @@
                     <div class="result">=</div>
                 </article>
             </main>
-        </section>
+        </main>
 
     <!-- end of css flexbox -->
 
-     <!-- home -->
-         <div class="home-page">
-            <a href="index.html">home</a>
-        </div>
-    <!-- end of home -->
+    <!-- footer -->
+    <footer>
+        <p>Copyright&copy;AltSchoolAfrica.All rights reserved</p>
+    </footer>
+
     
 </body>
 </html>

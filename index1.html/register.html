@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+     <!-- style.css -->
+    <link rel="stylesheet" href="../style.css/register.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- nav -->
+    <nav id="nav">
+        <div class="nav-logo">
+            <img src="../images/sideeq.snip.jpg" alt="nav-logo" width="50">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">contact </a></li>
+            <li><a href="calculator.html">calculator </a></li>
+            <li><a href="css flexbox.html">CSS flexbox </a></li>
+            <li><a href="login.html">login </a></li>
+        </ul>
+    </nav>
+    <!-- end of nav -->
+
+    <!-- title -->
+        <div class="title">
+            <div class="title-text">
+                <h2 class="title-heading">register</h2>
+            </div>
+        </div>
+    <!-- end of title -->
+    
+    <!-- register -->
+    <main class="container">
+        <h1 class="form-heading">AltSchool Africa Registration Form</h1>
+        <form class="form">
+            
+            <div class="form__group">
+                <label for="First name" class="form__group-label">First name</label>
+                <input type="text" name="First Name" id="First Name" placeholder="First Name" required>
+            </div>
+            <div class="form__group">
+                <label for="Last name" class="form__group-label">Last name</label>
+                <input type="text" name="Last Name" id="Last Name" placeholder="Last Name" required>
+            </div>
+            <div class="form__group">
+                <label for="Phone" class="form__group-label">Phone number</label>
+                <input type="text" name="Phone" id="Phone" placeholder="Phone number" required>
+            </div>
+            <div class="form__group">
+                <label for="Gender" class="form__group-label">Gender</label>
+                <select name="gender" id="gender" required>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                    <option value="not to say">prefer not to say</option>
+                </select>
+            </div>
+            <div class="form__group">
+                <label for="Country" class="form__group-label">Country</label>
+                <input type="text" name="Country" id="Country" placeholder="Country" required>
+            </div>
+            
+            <div class="form__group">
+                <label for="State/province" class="form__group-label">State/province</label>
+                <input type="text" name="State/province" id="State/province" placeholder="State/province" required>
+            </div>
+            <div class="form__group">
+                <label for="Username" class="form__group-label">Username</label>
+                <input type="text" name="Username" id="Username" placeholder="Username" required>
+            </div>
+            <div class="form__group">
+                <label for="Password" class="form__group-label">Password</label>
+                <input type="text" name="Password" id="Password" placeholder="Password" required>
+            </div>
+            <div class="form__group">
+                <label for="Confirm Password" class="form__group-label">Confirm Password</label>
+                <input type="text" name="Confirm Password" id="Confirm Password" placeholder="Confirm Password" required>
+            </div>
+            <div class="form__group">
+                <button class="btn-submit">Submit</button>
+            </div>
+           
+        </form>
+
+    </main>
+    <!-- end of register -->
+
+    <!-- footer -->
+    <footer>
+        <p>Copyright&copy;AltSchoolAfrica.All rights reserved</p>
+    </footer>
+    
+</body>
+</html>
